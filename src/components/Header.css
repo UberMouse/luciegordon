@@ -1,0 +1,9 @@
+.Header {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.Header--nav-item {
+	color: #2F434F;
+	margin-right: 2.5rem;
+}

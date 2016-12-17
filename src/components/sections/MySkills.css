@@ -1,0 +1,17 @@
+.MySkills--text {
+  padding-right: 3rem;
+}
+
+.MySkills--skill {
+  text-align: center;
+}
+
+.MySkills--image {
+  margin-bottom: 1rem;
+  width: 10rem;
+}
+
+.MySkills--caption {
+  font-weight: 600;
+  margin-bottom: 0rem;
+}

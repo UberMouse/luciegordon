@@ -1,0 +1,59 @@
+.header {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+.nav-item {
+	color: #2F434F;
+	margin-right: 2.5rem;
+}
+
+.self-portrait-home {
+	height: 40rem;
+	margin-left: 3rem;
+	margin-top: -2rem;
+}
+
+.self-portrait-about {
+  height: 32rem;
+}
+
+.home-section {
+	margin-top: 2.1rem;
+	padding-bottom: 1rem;
+}
+
+.section-arrow {
+  margin-top: 1rem;
+	padding-bottom: 10rem;
+}
+
+.section-arrow img {
+  width: 2rem;
+}
+
+.my-story-text {
+  padding-right: 3rem;
+}
+
+.my-skills-icon {
+  text-align: center;
+}
+
+.my-skills-image {
+  margin-bottom: 1rem;
+  width: 10rem;
+}
+
+.my-skills-caption {
+  font-weight: 600;
+  margin-bottom: 0rem;
+}
+
+.work-experience-row {
+  margin-bottom: 2rem;
+}
+
+.content-section {
+  height: 60rem;
+}

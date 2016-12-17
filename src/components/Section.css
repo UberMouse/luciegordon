@@ -1,0 +1,12 @@
+.Section {
+
+}
+
+.Section--arrow {
+  margin-top: 1rem;
+	padding-bottom: 10rem;
+}
+
+.Section--arrow img {
+  width: 2rem;
+}

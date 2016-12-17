@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
-import { Row, Column } from 'react-foundation';
+import Header from './components/Header';
+import Section from './components/Section';
+import * as Sections from './components/sections';
+import map from 'lodash/map';
 
 class App extends Component {
   render() {
+    const builtSections = map(Sections, (SectionComponent, name) => (
+      <Section key={name}>
+        <SectionComponent />
+      </Section>
+    ));
+
     return (
-      <Row>
-        <Column>
-          <h1>Test</h1>
-        </Column>
-      </Row>
+      <div>
+        <Header />
+
+        {builtSections}
+      </div>
     );
   }
 }
