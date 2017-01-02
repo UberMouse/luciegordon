@@ -17,16 +17,26 @@
   font-weight: 600;
 }
 
-.MyWork--modal {
-  opacity: 1;
+.Modal--header {
+  padding: 1rem;
 }
 
-.MyWork--modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #2F434F;
-  opacity: 0.5;
+.Modal--close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
+
+.Modal--description {
+  padding: 1rem;
+}
+
+.Modal--image {
+  text-align: center;
+}
+
+/* Remove scroll on the body when react-modal is open */
+.ReactModal__Body--open {
+    overflow: hidden;
 }
