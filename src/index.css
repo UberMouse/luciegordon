@@ -31,6 +31,10 @@ h1, h2, h3, p, span, a {
 	color: #2F434F;
 }
 
+h2 {
+  font-weight: bold;
+}
+
 body {
 	padding-top: 2rem;
 }
@@ -48,11 +52,12 @@ body {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 5rem;
 	line-height: 1.2;
 }
 
 p {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 300;
+  line-height: 2.4rem;
 }

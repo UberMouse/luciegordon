@@ -1,3 +1,32 @@
 .MyWork--row {
   margin-bottom: 2rem;
 }
+
+.MyWork--container {
+  position: relative;
+}
+
+.MyWork--hover-info {
+  bottom: 1rem;
+  left: 1rem;
+  width: 90%;
+  height: 3rem;
+  background-color: white;
+  position: absolute;
+  padding: .75em;
+  font-weight: 600;
+}
+
+.MyWork--modal {
+  opacity: 1;
+}
+
+.MyWork--modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2F434F;
+  opacity: 0.5;
+}

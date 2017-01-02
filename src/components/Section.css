@@ -1,11 +1,15 @@
 .Section {
-
+  margin-bottom: 15rem;
 }
 
 .Section--arrow {
   flex-grow: 1;
 }
 
-.Section--arrow img {
+.Section--arrow {
   width: 2rem;
+}
+
+.Section--header {
+  margin-bottom: 6rem;
 }

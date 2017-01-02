@@ -4,6 +4,7 @@
 
 .MySkills--skill {
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 .MySkills--image {
@@ -12,6 +13,8 @@
 }
 
 .MySkills--caption {
-  font-weight: 600;
   margin-bottom: 0rem;
+}
+
+.MySkills--description {
 }

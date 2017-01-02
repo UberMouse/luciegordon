@@ -2,21 +2,18 @@ import React from 'react';
 import './Section.css';
 import { Row, Column } from 'react-foundation';
 
-export default ({children, navigateToNextSectionCb}) => {
-  const viewportHeight = Math.max(
-    document.documentElement.clientHeight,
-    window.innerHeight || 0
-  );
+const Section = ({children, title, navigateToNextSectionCb}) => {
+  const header = <h1 className="Section--header text-center bold">{title}<span className="pink">.</span></h1>;
 
   return (
-    <div className="Section" style={{height: `${viewportHeight}px`}}>
+    <section className="Section align-center">
+      {title && header}
       {children}
-
-      <Row className="align-center align-bottom Section--arrow">
-        <Column medium={1}>
-          <img src="assets/Arrow.png" onClick={navigateToNextSectionCb}/>
-        </Column>
-      </Row>
-    </div>
+    </section>
   );
 }
+Section.defaultPropTypes = {
+  title: null,
+};
+
+export default Section;

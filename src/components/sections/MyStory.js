@@ -12,7 +12,7 @@ export default () => (
       <p>I grew up in Wellington, New Zealand and studied Visual Communication Design at the Massey University College of Creative Arts.</p>
     </Column>
     <Column medium={6}>
-      <img src="assets/SelfPortraitAbout.png" className="MyStory--self-portrait" />
+      <img src="assets/SelfPortraitAbout.png" />
     </Column>
   </Row>
 );
