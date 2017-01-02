@@ -31,6 +31,7 @@ class PortfolioItem extends React.Component {
 
         <Modal
           isOpen={modalOpen}
+          className="MyWorker--modal"
           overlayClassName="MyWork--modal-overlay"
         >
           <h1>{this.props.hoverText}</h1>
