@@ -1,0 +1,49 @@
+.Modal--close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.Modal--description {
+  padding: 1rem;
+}
+
+.Modal--image {
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.Modal--header {
+  padding: 3rem;
+  width: 100%;
+}
+
+.Modal--close-btn {
+  background-color: #F28B8B;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 8rem;
+  margin: 3rem;
+}
+
+.Modal--close-btn:hover {
+  background-color: #dd6e6e;
+}
+
+.Modal--close-btn:focus {
+  background-color: #dd6e6e;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .Modal--title {
+    font-size: 2rem;
+  }
+}
+
+/* Remove scroll on the body when react-modal is open */
+.ReactModal__Body--open {
+  overflow: hidden;
+}

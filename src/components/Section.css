@@ -13,3 +13,13 @@
 .Section--header {
   margin-bottom: 6rem;
 }
+
+@media screen and (max-width: 39.9375em) {
+  .Section {
+    margin-bottom: 5rem;
+  }
+
+  .Section--header {
+    margin-bottom: 3rem;
+  }
+}

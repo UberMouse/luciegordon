@@ -1,0 +1,42 @@
+.PortfolioItem--container {
+  position: relative;
+}
+
+.PortfolioItem--hover-info {
+  bottom: 1rem;
+  left: 1rem;
+  width: 90%;
+  height: 3rem;
+  background-color: white;
+  position: absolute;
+  padding: .75em;
+  font-weight: 600;
+}
+
+.PortfolioItem--image {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .PortfolioItem--image {
+    margin-bottom: 1rem;
+  }
+}
+
+.information-hover-enter {
+  opacity: 0.1;
+}
+
+.information-hover-enter.information-hover-enter-active {
+  opacity: 1;
+  transition: opacity 100ms ease-in;
+}
+
+.information-hover-leave {
+  opacity: 1;
+}
+
+.information-hover-leave.information-hover-leave-active {
+  opacity: 0.1;
+  transition: opacity 100ms ease-in;
+}
