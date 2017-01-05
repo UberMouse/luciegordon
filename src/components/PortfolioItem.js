@@ -28,7 +28,10 @@ export default class PortfolioItem extends Component {
     const { contentRoot, hoverText, skills, content } = this.props;
 
     const hoverInformation = (
-      <span className="PortfolioItem--hover-info">{hoverText}</span>
+      <div className="PortfolioItem--hover-info">
+        <span>{hoverText} </span>
+        <span><i className="fa fa-arrow-right"></i></span>
+      </div>
     );
 
     return (

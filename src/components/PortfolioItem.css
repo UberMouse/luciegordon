@@ -11,6 +11,13 @@
   position: absolute;
   padding: .75em;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PortfolioItem--hover-info span {
+  
 }
 
 .PortfolioItem--image {
