@@ -81,9 +81,10 @@ export default [
     ],
     content: [
       {type: 'image', name: 'DestNZ_1'},
-      {type: 'text', content: 'Destination New Zealand is an application designed to assist Chinese exchange students visiting or staying in New Zealand. The app is designed to assist them in understanding our culture and daily life practices of New Zealanders'},
+      {type: 'text', content: 'Destination New Zealand is an application designed to assist Chinese exchange students visiting or staying in New Zealand. The app is designed to assist them in understanding our culture and daily life practices of New Zealanders.'},
       {type: 'image', name: 'DestNZ_2'},
-      {type: 'text', content: 'This is a person project I established; designing all interfaces and characters which reflect various species native to New Zealand.'}
+      {type: 'text', content: 'This is a personal project I established; designing all interfaces and characters which reflect various species native to New Zealand.'},
+      {type: 'image', name: 'DestNZ_3'},
     ],
   },
   { contentRoot: 'ed',
@@ -98,7 +99,7 @@ export default [
       {type: 'text', content: 'Ed the Axolotl is a personal project of mine established to assist me in caring for my pet axolotl named Ed. I use the app frequently to track how often his tank needs cleaning and to send reminders when he needs feeding.'},
       {type: 'image', name: 'Ed_2'},
       {type: 'text', content: 'Axolotl are small amphibians that are otherwise known as walking fish and are closely related to salamander. They are critically endangered in the wild due to water pollution and are used extensively in scientific research due to their ability to regenerate limbs.'},
-      {type: 'images', names: ['Ed_3', 'Ed_5']},
+      {type: 'images', names: ['Ed_3', 'Ed_6']},
     ],
   },
 ];

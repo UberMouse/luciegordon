@@ -5,3 +5,11 @@
 .Contact--unbold {
   font-weight: 300;
 }
+
+.Contact--back-to-top img {
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  transform: scaleY(-1);
+}

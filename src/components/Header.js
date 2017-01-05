@@ -14,6 +14,8 @@ const menuItems = map(
 export default () => {
   return (
     <div>
+      <a id="top"></a>
+
       <Row className="Header semi-bold hide-for-small-only">
         <Column medium={6}>
           <span className="pink">Lucie Gordon</span>
