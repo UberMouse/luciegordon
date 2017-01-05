@@ -6,3 +6,17 @@
 	color: #2F434F;
 	margin-right: 2.5rem;
 }
+
+.Header--nav-item:hover {
+  color: #F28B8B;
+}
+
+.Header--nav-item:focus {
+  color: #2F434F;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .Header--nav-item {
+    margin-right: 0;
+  }
+}

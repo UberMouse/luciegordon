@@ -8,17 +8,28 @@
 
 .Modal--description {
   padding: 1rem;
+  padding-left: 0;
+  text-align: left;
 }
 
 .Modal--image {
-  text-align: center;
-  width: 100%;
-  padding: 1rem;
+  max-height: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
 
 .Modal--header {
   padding: 3rem;
   width: 100%;
+}
+
+.Modal--title {
+  margin-bottom: 1rem;
+}
+
+.Modal--skills {
+  opacity: .5;
+  margin-bottom: 4rem;
 }
 
 .Modal--close-btn {
@@ -37,10 +48,54 @@
   background-color: #dd6e6e;
 }
 
+.Modal--content {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(254, 254, 254);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 0px;
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (max-width: 39.9375em) {
   .Modal--title {
     font-size: 2rem;
   }
+
+  .Modal--content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Modal--70p-image img {
+  width: 70%;
+}
+
+.Modal--50p-image img {
+  width: 50%;
+}
+
+.Modal--AnyQ-char {
+  padding-bottom: 1rem;
+}
+
+.Modal--content-header {
+  width: 100%;
 }
 
 /* Remove scroll on the body when react-modal is open */

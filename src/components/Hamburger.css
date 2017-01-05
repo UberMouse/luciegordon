@@ -1,17 +1,31 @@
 .Hamburger {
   width: 100%;
-  background-color: grey;
+  position: relative;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-top: -2rem;
+}
+
+.Hamburger--open {
+  position: absolute;
+  top: 1rem;
+  height: 100%;
+  background-color: #FEFEFE;
+  overflow: hidden;
 }
 
 .Hamburger--toggle {
   margin: .4rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
 }
 
 .Hamburger--items {
-  text-align: center;
-  list-style: none;
-}
-
-.Hamburger a {
-  color: #fefefe;
+  height: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

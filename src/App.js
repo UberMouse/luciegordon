@@ -5,21 +5,33 @@ import * as Sections from './components/sections';
 import map from 'lodash/map';
 import zip from 'lodash/zip';
 
-const titleMapping = {
-  Intro: null,
-  MyStory: 'About',
-  MySkills: 'Skills',
-  MyWork: 'Portfolio',
-  Contact: 'Contact',
+const sectionData = {
+  Intro: {},
+  MyStory: {
+    title: 'About',
+    anchor: 'About'
+  },
+  MySkills: {
+    title: 'Skills',
+    anchor: 'Services',
+  },
+  MyWork: {
+    title: 'Portfolio',
+    anchor: 'Portfolio',
+  },
+  Contact: {
+    title: 'Contact',
+    anchor: 'Contact',
+  }
 };
 
 class App extends Component {
   render() {
     const builtSections = map(Sections, (SectionComponent, name) => {
-      const title = titleMapping[name];
+      const { title, anchor } = sectionData[name];
 
       return (
-        <Section key={name} title={title}>
+        <Section key={name} title={title} anchor={anchor}>
           <SectionComponent />
         </Section>
       )

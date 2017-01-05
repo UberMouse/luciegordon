@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import map from 'lodash/map';
+import cx from 'classnames';
 import './Hamburger.css';
 
 export default class Hamburger extends Component {
@@ -12,28 +13,50 @@ export default class Hamburger extends Component {
   }
 
   toggle = () => {
+    if (this.state.open)
+      window.$('body').removeClass('Hamburger--open');
+    else
+      window.$('body').addClass('Hamburger--open');
+
     this.setState({open: !this.state.open});
   }
 
   render() {
-    const listifiedChildren = map(
+    const { open } = this.state;
+
+    const headerifiedChildren = map(
       this.props.children,
       child => (
-        <li>{child}</li>
+        <h1 className="semi-bold" onClick={this.toggle}>{child}</h1>
       )
     );
+    const iconClasses = cx({
+      fa: true,
+      'fa-2x': true,
+      'Hamburger--toggle': true,
+      'fa-bars': !open,
+      'fa-times': open,
+    });
+    const containerClasses = cx({
+      'show-for-small-only': true,
+      'Hamburger': true,
+      'Hamburger--open': open,
+    });
 
     return (
-      <div className="show-for-small-only Hamburger">
+      <div className={containerClasses}>
+        <span className="pink">Lucie Gordon</span>
         <i
-          className="fa fa-2x fa-bars Hamburger--toggle"
+          className={iconClasses}
           aria-hidden="true"
           onClick={this.toggle}
         ></i>
 
-        <ul className="Hamburger--items">
-          {this.state.open && listifiedChildren}
-        </ul>
+        {this.state.open && (
+          <div className="Hamburger--items">
+            {headerifiedChildren}
+          </div>
+        )}
       </div>
     );
   }

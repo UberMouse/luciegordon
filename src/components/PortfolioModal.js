@@ -17,11 +17,12 @@ const styleOverrides = {
   }
 };
 
-export default ({open, header, closeCb}) => (
+export default ({open, header, children, skills, closeCb}) => (
   <Modal
     isOpen={open}
     contentLabel="portfolio-modal"
     style={styleOverrides}
+    className="Modal--content"
   >
     <div className="Modal--header">
       <span
@@ -29,6 +30,7 @@ export default ({open, header, closeCb}) => (
         onClick={closeCb}
       >x</span>
     </div>
+
     <Row>
       <Column className="align-center">
         <h1 className="Modal--title bold text-center">
@@ -36,15 +38,13 @@ export default ({open, header, closeCb}) => (
         </h1>
       </Column>
     </Row>
-    <Row isColumn>
-      <p className="Modal--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacinia lacinia magna imperdiet dapibus. Curabitur vitae justo ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget tincidunt felis, eu ullamcorper velit. Suspendisse dui est, lacinia et rhoncus vitae, vehicula viverra arcu. Praesent ligula sem, lobortis sit amet justo non, hendrerit accumsan elit. Praesent porttitor efficitur elit sit amet tincidunt. Maecenas vel velit ac sem placerat malesuada vitae a risus. Sed pellentesque rutrum ligula ut vulputate. Suspendisse potenti. In mollis imperdiet dolor quis tincidunt.</p>
-    </Row>
+
     <Row isColumn className="align-center">
-      <img src="http://placehold.it/800x500" className="Modal--image" />
+      <p className="Modal--skills">{skills.join(', ')}</p>
     </Row>
-    <Row isColumn>
-      <p className="Modal--description" style={{paddingTop: '1rem'}}>Vitae, vehicula viverra arcu. Praesent ligula sem, lobortis sit amet justo non, hendrerit accumsan elit. Praesent porttitor efficitur elit sit amet tincidunt. Maecenas vel velit ac sem placerat malesuada vitae a risus. Sed pellentesque rutrum ligula ut vulputate. Suspendisse potenti. In mollis imperdiet dolor quis tincidunt.</p>
-    </Row>
+
+    {children}
+
     <Row isColumn className="align-center">
       <a href="javascript:void(0)" className="button Modal--close-btn" onClick={closeCb}>Close</a>
     </Row>

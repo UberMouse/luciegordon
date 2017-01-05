@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Row, Column } from 'react-foundation';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
 import PortfolioModal from './PortfolioModal';
+import BuildModalContent from '../BuildModalContent';
 import './PortfolioItem.css';
 
 export default class PortfolioItem extends Component {
@@ -24,7 +25,7 @@ export default class PortfolioItem extends Component {
 
   render() {
     const { hovered, modalOpen } = this.state;
-    const { hoverText } = this.props;
+    const { contentRoot, hoverText, skills, content } = this.props;
 
     const hoverInformation = (
       <span className="PortfolioItem--hover-info">{hoverText}</span>
@@ -38,7 +39,7 @@ export default class PortfolioItem extends Component {
           onClick={this.openModal}
           className="PortfolioItem--container"
         >
-          <img src={`assets/portfolio/${this.props.thumb}Thumbnail.jpg`} />
+          <img src={`assets/portfolio/${contentRoot}/thumb.jpg`} />
           <CSSTransitionGroup
             transitionName="information-hover"
             transitionEnterTimeout={100}
@@ -51,8 +52,11 @@ export default class PortfolioItem extends Component {
         <PortfolioModal
           open={modalOpen}
           header={hoverText}
+          skills={skills}
           closeCb={this.closeModal}
-        />
+        >
+          {BuildModalContent(contentRoot, content)}
+        </PortfolioModal>
       </Column>
     );
   }
