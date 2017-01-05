@@ -3,7 +3,7 @@ var controller = new ScrollMagic.Controller();
 
 // change behaviour of controller to animate scroll instead of jump
 controller.scrollTo(function (newpos) {
-  TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
+  TweenMax.to(window, 0.5, {ease: GreenSockGlobals.Cubic.easeIn, scrollTo: {y: newpos}});
 });
 
 //  bind scroll to anchor links
