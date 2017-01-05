@@ -14,9 +14,9 @@ export default class Hamburger extends Component {
 
   toggle = () => {
     if (this.state.open)
-      window.$('body').removeClass('Hamburger--open');
+      document.body.classList.remove('Hamburger--open');
     else
-      window.$('body').addClass('Hamburger--open');
+      document.body.classList.add('Hamburger--open');
 
     this.setState({open: !this.state.open});
   }

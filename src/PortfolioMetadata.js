@@ -62,7 +62,7 @@ export default [
       'Character Design'
     ],
     content: [
-      {type: 'image', name: 'Laika_1'},
+      {type: 'image', name: 'Laika1'},
       {type: 'text', content: 'A series of sequential illustrations I created for a children’s educational storybook titled ‘Earth v The Moon’ by Lanky Hippo publishers. The story aims to teach young school children about the Moon by comparing it to Earth. I designed the character Laika the dog to enforce the history of how we managed to reach the moon in the first place.'},
       {type: 'image', name: 'Laika2'},
       {type: 'image', name: 'Laika3'},
