@@ -33,7 +33,7 @@ export default () => (
       <Skill
         icon="illustration"
         caption="Illustration"
-        description="Character Design, Digital Art, Illustration, Sequential Art."
+        description="Character Design, Digital Art, Digital Illustration, Sequential Art."
       />
     </Row>
   </div>

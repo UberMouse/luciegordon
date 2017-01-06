@@ -21,6 +21,10 @@
   margin-bottom: 2rem;
 }
 
+.PortfolioItem:hover {
+  cursor: pointer;
+}
+
 .PortfolioItem--container:after {
   content: '\A';
   position: absolute;
