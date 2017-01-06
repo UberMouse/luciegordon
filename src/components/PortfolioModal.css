@@ -55,7 +55,7 @@
   right: 40px;
   bottom: 40px;
   border: 1px solid rgb(204, 204, 204);
-  background: rgb(254, 254, 254);
+  background-color: #fefefe;
   overflow: auto;
   border-radius: 4px;
   outline: none;
@@ -64,6 +64,7 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  z-index: 9999;
 }
 
 @media screen and (max-width: 39.9375em) {

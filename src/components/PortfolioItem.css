@@ -14,14 +14,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
-.PortfolioItem--hover-info span {
-  
-}
-
-.PortfolioItem--image {
+.PortfolioItem {
   margin-bottom: 2rem;
+}
+
+.PortfolioItem--container:after {
+  content: '\A';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0; left: 0;
+  background-color: #2F434F;
+}
+
+.PortfolioItem--container:hover:after {
+  opacity: .7;
 }
 
 @media screen and (max-width: 39.9375em) {

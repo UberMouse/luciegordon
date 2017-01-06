@@ -98,7 +98,7 @@ export default [
       {type: 'image', name: 'Ed_1'},
       {type: 'text', content: 'Ed the Axolotl is a personal project of mine established to assist me in caring for my pet axolotl named Ed. I use the app frequently to track how often his tank needs cleaning and to send reminders when he needs feeding.'},
       {type: 'image', name: 'Ed_2'},
-      {type: 'text', content: 'Axolotl are small amphibians that are otherwise known as walking fish and are closely related to salamander. They are critically endangered in the wild due to water pollution and are used extensively in scientific research due to their ability to regenerate limbs.'},
+      {type: 'text', content: 'Axolotl are small amphibians that are otherwise known as walking fish and are closely related to salamanders. They are critically endangered in the wild due to water pollution and are used extensively in scientific research due to their ability to regenerate limbs.'},
       {type: 'images', names: ['Ed_3', 'Ed_6']},
     ],
   },

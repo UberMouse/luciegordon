@@ -1,3 +1,4 @@
+/* global ga */
 import React, { Component, PropTypes } from 'react';
 import { Row, Column } from 'react-foundation';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
@@ -20,6 +21,8 @@ export default class PortfolioItem extends Component {
   }
 
   openModal = () => {
+    ga('send', 'event', 'Modal', 'Open', this.props.hoverText);
+
     this.setState({modalOpen: true});
   }
 
@@ -35,14 +38,14 @@ export default class PortfolioItem extends Component {
     );
 
     return (
-      <Column className="PortfolioItem--image" medium={4} small={12}>
+      <Column className="PortfolioItem" medium={4} small={12}>
         <div
           onMouseEnter={() => this.setState({hovered: true})}
           onMouseLeave={() => this.setState({hovered: false})}
           onClick={this.openModal}
           className="PortfolioItem--container"
         >
-          <img src={`assets/portfolio/${contentRoot}/thumb.jpg`} />
+          <img src={`assets/portfolio/${contentRoot}/thumb.jpg`} className="PortfolioItem--image" />
           <CSSTransitionGroup
             transitionName="information-hover"
             transitionEnterTimeout={100}

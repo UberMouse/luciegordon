@@ -6,15 +6,8 @@ import './PortfolioModal.css';
 const styleOverrides = {
   overlay: {
     backgroundColor: 'rgba(47, 67, 79, 0.75)',
+    zIndex: 2,
   },
-  content: {
-    backgroundColor: '#fefefe',
-    padding: 0,
-    textAlign: 'center',
-    maxWidth: '1200px',
-    marginLeft: 'auto',
-    marginRight: 'auto'
-  }
 };
 
 export default ({open, header, children, skills, closeCb}) => (
