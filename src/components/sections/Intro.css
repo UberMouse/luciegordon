@@ -1,6 +1,6 @@
 .Intro {
   margin-top: 2.1rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .Intro--self-portrait {
@@ -13,6 +13,10 @@
 }
 
 @media screen and (max-width: 39.9375em) {
+  .Intro {
+    margin-top: 0;
+  }
+
   .Intro--sub-heading {
     font-size: 1em;
     padding: .5rem;

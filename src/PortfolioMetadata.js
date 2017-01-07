@@ -15,7 +15,7 @@ export default [
       {type: 'image', name: 'MySci_3'},
       {type: 'text', content: 'Meet Aura and Rudy, two New Zealand high school students designed to provide help and tips to users on their learning journey. Aura is a young Polynesian girl whose name abbreviates from the word Aurum (Au on the periodic table) which is Latin for Gold. Rudy is quite a witty student and is named after the smallest living bacteria in the world Carsonella ruddii.'},
       {type: 'image', name: 'MySci_Chars', className: 'Modal--70p-image'},
-      {type: 'text', content: 'This is a personal project of mine and was completed during my honours year of university. I had the privilege to visit Singapore in 2016 and receive a reddot award for my efforts in this project. My role in this project was establishing an issue that could be resolved with design, undertaking user testing sessions to establish the best approach, designing the interfaces, integrating and designing characters and establishing a brand.'},
+      {type: 'text', content: 'This is a personal project of mine and was completed during my honours year of university. I had the privilege to visit Singapore in 2016 and receive a Reddot Concept Design Award for my efforts in this project. My role in this project was establishing an issue that could be resolved with design, undertaking user testing sessions to establish the best approach, designing the interfaces, integrating and designing characters and establishing a brand.'},
     ],
   },
   {

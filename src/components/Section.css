@@ -3,6 +3,10 @@
   margin-bottom: 15rem;
 }
 
+.Section:last-of-type {
+  margin-bottom: 2rem;
+}
+
 .Section--arrow {
   flex-grow: 1;
 }
