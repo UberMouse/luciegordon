@@ -1,5 +1,5 @@
 import React from 'react';
-import './MyStory.css';
+import './About.css';
 import { Row, Column } from 'react-foundation';
 
 export default () => (

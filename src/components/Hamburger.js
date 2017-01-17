@@ -38,7 +38,6 @@ export default class Hamburger extends Component {
       'fa-times': open,
     });
     const containerClasses = cx({
-      'show-for-small-only': true,
       'Hamburger': true,
       'Hamburger--open': open,
     });

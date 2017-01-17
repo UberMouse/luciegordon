@@ -5,7 +5,7 @@ import Hamburger from './Hamburger';
 import map from 'lodash/map';
 
 const menuItems = map(
-  ['Portfolio', 'Services', 'About', 'Contact'],
+  ['Portfolio', 'Skills', 'About', 'Contact'],
   item => (
     <a href={`#${item}`} className="Header--nav-item">{item}</a>
   )
@@ -16,7 +16,7 @@ export default () => {
     <div>
       <a id="top"></a>
 
-      <Row className="Header semi-bold hide-for-small-only">
+      <Row className="Header semi-bold show-for-large">
         <Column medium={6}>
           <span className="pink">Lucie Gordon</span>
         </Column>
@@ -25,9 +25,11 @@ export default () => {
         </Column>
       </Row>
 
-      <Hamburger>
-        {menuItems}
-      </Hamburger>
+      <div className="hide-for-large">
+        <Hamburger>
+          {menuItems}
+        </Hamburger>
+      </div>
     </div>
   );
 }

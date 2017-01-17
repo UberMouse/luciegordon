@@ -12,6 +12,14 @@
   line-height: 3rem;
 }
 
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .Intro--sub-heading {
+    font-size: 1em;
+    padding: .5rem;
+    margin-top: -1rem;
+  }
+}
+
 @media screen and (max-width: 39.9375em) {
   .Intro {
     margin-top: 0;

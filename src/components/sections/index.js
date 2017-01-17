@@ -1,5 +1,5 @@
 export {default as Intro} from './Intro';
-export {default as MyWork} from './MyWork';
-export {default as MySkills} from './MySkills';
-export {default as MyStory} from './MyStory';
+export {default as Portfolio} from './Portfolio';
+export {default as Skills} from './Skills';
+export {default as About} from './About';
 export {default as Contact} from './Contact';

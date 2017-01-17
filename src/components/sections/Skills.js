@@ -1,5 +1,5 @@
 import React from 'react';
-import './MySkills.css';
+import './Skills.css';
 import { Row, Column } from 'react-foundation';
 
 const Skill = ({icon, caption, description}) => (

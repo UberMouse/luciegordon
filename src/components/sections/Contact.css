@@ -7,10 +7,16 @@
 }
 
 .Contact--back-to-top img {
-  margin-top: 10rem;
+  margin-top: 20rem;
   margin-left: auto;
   margin-right: auto;
   height: auto;
   width: 70%;
   transform: scaleY(-1);
+}
+
+@media screen and (max-width: 39.9375em) {
+  .Contact--back-to-top img {
+    margin-top: 10rem;
+  }
 }
