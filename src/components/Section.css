@@ -2,6 +2,10 @@
   margin-bottom: 15rem;
 }
 
+.Section:first-of-type {
+  margin-bottom: 0rem;
+}
+
 .Section:last-of-type {
   margin-bottom: 2rem;
 }

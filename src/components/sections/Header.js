@@ -1,7 +1,7 @@
 import './Header.css';
 import { Row, Column } from 'react-foundation';
 import React from 'react';
-import Hamburger from './Hamburger';
+import Hamburger from '../Hamburger';
 import map from 'lodash/map';
 
 const menuItems = map(

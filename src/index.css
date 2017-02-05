@@ -28,7 +28,7 @@
 
 h1, h2, h3, p, span, a {
   font-family: ProximaNova, Helvetica, sans-serif;
-  color: #2F434F;
+  color: #484954;
 }
 
 h2 {
@@ -98,4 +98,12 @@ p {
     font-size: 1rem;
     line-height: 2rem !important;
   }
+}
+
+.section-background-one {
+  background-color: #FEFEFE;
+}
+
+.section-background-two {
+  background-color: #F9F8F6;
 }
