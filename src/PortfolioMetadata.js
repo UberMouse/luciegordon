@@ -1,7 +1,7 @@
 export default [
   {
     contentRoot: 'mysci',
-    hoverText: 'Mysci',
+    hoverHeader: 'Mysci',
     skills: [
       'Interface Design',
       'User Experience',
@@ -20,7 +20,7 @@ export default [
   },
   {
     contentRoot: 'anyq',
-    hoverText: 'AnyQuestions',
+    hoverHeader: 'AnyQuestions',
     skills: [
       'Interface Design',
       'User Experience',
@@ -41,7 +41,8 @@ export default [
   },
   {
     contentRoot: 'powerco',
-    hoverText: 'Powerco',
+    hoverHeader: 'Powerco',
+    hoverSubHeader: 'User experience and conveying information harmoniously was key in this project; who wants to deal with a difficult interface when there power is out?',
     skills: [
       'Interface Design',
       'Application Design',
@@ -59,7 +60,7 @@ export default [
   },
   {
     contentRoot: 'destnz',
-    hoverText: 'Destination New Zealand',
+    hoverHeader: 'Destination New Zealand',
     skills: [
       'Interface Design',
       'App Design',
@@ -76,7 +77,7 @@ export default [
   },
   {
     contentRoot: 'laika',
-    hoverText: 'Earth v The Moon',
+    hoverHeader: 'Earth v The Moon',
     skills: [
       'Illustration',
       'Character Design'
@@ -91,7 +92,7 @@ export default [
     ],
   },
   { contentRoot: 'ed',
-    hoverText: 'Ed the Axolotl',
+    hoverHeader: 'Ed the Axolotl',
     skills: [
       'Interface Design',
       'App Design',
@@ -107,7 +108,7 @@ export default [
   },
   {
     contentRoot: 'planpoker',
-    hoverText: 'Planning Poker Cards',
+    hoverHeader: 'Planning Poker Cards',
     skills: [
       'Illustration',
     ],
@@ -122,7 +123,7 @@ export default [
   },
   {
     contentRoot: 'gs1',
-    hoverText: 'GS1 NZ',
+    hoverHeader: 'GS1 NZ',
     skills: [
       'Interaction Design',
       'Interface Design',

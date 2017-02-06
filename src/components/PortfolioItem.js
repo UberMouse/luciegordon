@@ -21,24 +21,24 @@ export default class PortfolioItem extends Component {
   }
 
   openModal = () => {
-    ga('send', 'event', 'Modal', 'Open', this.props.hoverText);
+    ga('send', 'event', 'Modal', 'Open', this.props.hoverHeader);
 
     this.setState({modalOpen: true});
   }
 
   render() {
     const { hovered, modalOpen } = this.state;
-    const { contentRoot, hoverText, skills, content } = this.props;
+    const { contentRoot, hoverHeader, hoverSubHeader, skills, content } = this.props;
 
     const hoverInformation = (
-      <div className="PortfolioItem--hover-info">
-        <span>{hoverText} </span>
-        <span><i className="fa fa-arrow-right"></i></span>
+      <div className="PortfolioItem--hover">
+        <h3>{hoverHeader}</h3>
+        <p>{hoverSubHeader}</p>
       </div>
     );
 
     return (
-      <Column className="PortfolioItem" medium={4} small={12}>
+      <Column className="PortfolioItem" medium={6} small={12}>
         <div
           onMouseEnter={() => this.setState({hovered: true})}
           onMouseLeave={() => this.setState({hovered: false})}
@@ -57,7 +57,7 @@ export default class PortfolioItem extends Component {
 
         <PortfolioModal
           open={modalOpen}
-          header={hoverText}
+          header={hoverHeader}
           skills={skills}
           closeCb={this.closeModal}
         >

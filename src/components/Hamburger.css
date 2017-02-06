@@ -4,6 +4,7 @@
   padding: 1rem;
   font-size: 1.2rem;
   margin-top: -2rem;
+  z-index: 9999;
 }
 
 .Hamburger--open {
@@ -15,10 +16,15 @@
 }
 
 .Hamburger--toggle {
+  font-size: 1.8rem;
   margin: .4rem;
   position: absolute;
   top: 0.5rem;
-  right: 1rem;
+  right: 2rem;
+}
+
+.Hamburger--title {
+  margin-left: 1.8rem;
 }
 
 .Hamburger--items {

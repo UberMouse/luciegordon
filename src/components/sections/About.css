@@ -1,11 +1,33 @@
 .MyStory {
-
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .MyStory--text {
+  padding-top: 3rem;
   padding-right: 3rem;
 }
 
-.MyStory--character {
+.MyStory--image {
   margin-top: 1.5rem;
+  text-align: center;
+}
+
+.MyStory--content {
+  margin-top: 3rem;
+}
+
+.MyStory--image img {
+  height: 55%;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .MyStory {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .MyStory--image img {
+    height: 35%;
+  }
 }

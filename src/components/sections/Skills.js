@@ -5,13 +5,23 @@ import { Row, Column } from 'react-foundation';
 const Skill = ({icon, caption, description}) => (
   <Column className="MySkills--skill" medium={6}>
     <img className="MySkills--image" src={`assets/myskills-${icon}.png`} />
-    <h2 className="MySkills--caption">{caption}</h2>
+    <p className="MySkills--caption">{caption}</p>
     <p className="MySkills--description hide-for-small-only">{description}</p>
   </Column>
 );
 
 export default () => (
-  <div>
+  <div className="MySkills">
+    <Row className="align-center text-center">
+      <Column medium={3}>
+        <h1>Skills</h1>
+      </Column>
+    </Row>
+    <Row className="align-center text-center">
+      <Column medium={3}>
+        <p>Areas I specialise in:</p>
+      </Column>
+    </Row>
     <Row className="align-justify MySkills--first-row">
       <Skill
         icon="interfacedesign"

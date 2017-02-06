@@ -3,11 +3,14 @@ import './Section.css';
 import { Row, Column } from 'react-foundation';
 import cx from 'classnames';
 
-const Section = ({children, title, anchor, oddEven}) => {
-  const header = (
-    <h1 className="Section--header text-center bold">
-      {title}<span className="pink">.</span>
-    </h1>
+const Section = ({children, heading, anchor, oddEven}) => {
+  const header = () => (
+    <div className="Section--heading text-center">
+      <h1 className="Section--header text-center bold">
+        {heading.header}
+      </h1>
+      <p className="Section--sub-header">{heading.subHeader}</p>
+    </div>
   );
   const classes = cx({
     Section: true,
@@ -18,7 +21,7 @@ const Section = ({children, title, anchor, oddEven}) => {
   return (
     <section className={classes}>
 
-      {title && header}
+      {heading && header()}
 
       {children}
     </section>

@@ -8,9 +8,6 @@ import PortfolioMetadata from '../../PortfolioMetadata';
 
 export default () => (
   <div>
-    <Row isColumn>
-      <h2>Recent Work</h2>
-    </Row>
     <Row className="MyWork--row">
       {map(PortfolioMetadata, metadata => <PortfolioItem {...metadata} />)}
     </Row>

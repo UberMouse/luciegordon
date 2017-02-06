@@ -2,27 +2,34 @@
   position: relative;
 }
 
-.PortfolioItem--hover-info {
-  bottom: 1rem;
-  left: 1rem;
-  width: 90%;
-  height: 3rem;
-  background-color: white;
-  position: absolute;
-  padding: .75em;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-}
-
 .PortfolioItem {
   margin-bottom: 2rem;
 }
 
 .PortfolioItem:hover {
   cursor: pointer;
+}
+
+.PortfolioItem--hover {
+}
+
+.PortfolioItem--hover h3 {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  z-index: 5;
+  color: #FEFEFE;
+  font-weight: 700;
+}
+
+.PortfolioItem--hover p {
+  position: absolute;
+  top: 4.5rem;
+  left: 2rem;
+  z-index: 5;
+  color: #FEFEFE;
+  width: 80%;
+  line-height: 2.5rem;
 }
 
 .PortfolioItem--container:after {
@@ -32,11 +39,11 @@
   width: 100%;
   opacity: 0;
   top: 0; left: 0;
-  background-color: #2F434F;
+  background-color: #484954;
 }
 
 .PortfolioItem--container:hover:after {
-  opacity: .7;
+  opacity: .8;
 }
 
 @media screen and (max-width: 39.9375em) {
