@@ -50,6 +50,10 @@
   .PortfolioItem--image {
     margin-bottom: 1rem;
   }
+
+  .PortfolioItem {
+    margin-bottom: .5rem;
+  }
 }
 
 .information-hover-enter {

@@ -23,7 +23,7 @@ export default class PortfolioItem extends Component {
   openModal = () => {
     ga('send', 'event', 'Modal', 'Open', this.props.hoverHeader);
 
-    this.setState({modalOpen: true});
+    this.setState({modalOpen: true, hovered: false});
   }
 
   render() {

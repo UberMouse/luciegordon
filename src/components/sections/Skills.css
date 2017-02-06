@@ -40,3 +40,14 @@
     padding-bottom: 2rem;
   }
 }
+
+@media screen and (max-width: 39.9735em) {
+  .MySkills {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .MySkills--skill {
+    margin-bottom: 1.5rem;
+  }
+}

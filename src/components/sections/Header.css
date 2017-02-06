@@ -1,5 +1,6 @@
 .Header {
   font-size: 1.2rem;
+  min-height: 5rem;
 }
 
 .Header--nav-item {
@@ -8,7 +9,7 @@
 }
 
 .Header--nav-item:hover {
-  color: #F28B8B;
+  color: #F76B7E;
 }
 
 .Header--nav-item:focus {

@@ -3,13 +3,16 @@
   position: relative;
   padding: 1rem;
   font-size: 1.2rem;
-  margin-top: -2rem;
   z-index: 9999;
+}
+
+.Hamburger h1 {
+  padding: 1rem;
 }
 
 .Hamburger--open {
   position: absolute;
-  top: 1rem;
+  top: 0rem;
   height: 100%;
   background-color: #FEFEFE;
   overflow: hidden;

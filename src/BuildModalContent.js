@@ -18,10 +18,37 @@ export default function BuildModalContent(contentRoot, content) {
       );
     }
 
-    if (type === 'text') {
+    if (type === 'intro') {
+      const leftContent = contentItem.columns.left.map(text => <h2 className="Modal--subheader">{text}</h2>);
+      const rightContent = contentItem.columns.right.map(text => <p className="Modal--description">{text}</p>);
+
       return (
-        <Row isColumn className={className}>
-          <p className="Modal--description">{contentItem.content}</p>
+        <Row className={`${className} Modal--intro`}>
+          <Column small={12} large={6}>
+            {leftContent}
+          </Column>
+          <Column small={12} large={6}>
+            {rightContent}
+          </Column>
+        </Row>
+      );
+    }
+
+    if (type === 'text') {
+      if (contentItem.columns == undefined)
+        return null;
+
+      const leftContent = contentItem.columns.left.map(text => <p className="Modal--description">{text}</p>);
+      const rightContent = contentItem.columns.right.map(text => <p className="Modal--description">{text}</p>);
+
+      return (
+        <Row className={className}>
+          <Column small={12} large={6}>
+            {leftContent}
+          </Column>
+          <Column small={12} large={6}>
+            {rightContent}
+          </Column>
         </Row>
       );
     }

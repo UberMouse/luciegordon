@@ -5,12 +5,14 @@ import cx from 'classnames';
 
 const Section = ({children, heading, anchor, oddEven}) => {
   const header = () => (
-    <div className="Section--heading text-center">
-      <h1 className="Section--header text-center bold">
-        {heading.header}
-      </h1>
-      <p className="Section--sub-header">{heading.subHeader}</p>
-    </div>
+    <Row isColumn>
+      <div className="Section--heading text-center">
+        <h1 className="Section--header text-center bold">
+          {heading.header}
+        </h1>
+        <p className="Section--sub-header">{heading.subHeader}</p>
+      </div>
+    </Row>
   );
   const classes = cx({
     Section: true,
@@ -20,6 +22,7 @@ const Section = ({children, heading, anchor, oddEven}) => {
 
   return (
     <section className={classes}>
+      {anchor && <a id={anchor} className="Section--anchor">[should not be visible]</a>}
 
       {heading && header()}
 

@@ -7,12 +7,7 @@
 }
 
 .Intro--self-portrait {
-  padding-top: 6rem;
   z-index: 2;
-}
-
-.Intro--self-portrait img {
-  height: 65%;
 }
 
 .Intro--sub-heading {
@@ -43,6 +38,10 @@
 
 @media screen and (max-width: 39.9375em) {
   .Intro {
+    margin-top: 0;
+  }
+
+  .Intro--message {
     margin-top: 0;
   }
 
