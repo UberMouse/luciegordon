@@ -2,7 +2,7 @@ export default [
   {
     contentRoot: 'mysci',
     hoverHeader: 'Mysci',
-    hoverSubHeader: "Transforming static text-book content into an immersive experience through game-play and interaction is key to engaging today's high school students to learn.",
+    hoverSubHeader: "Transforming static textbook content into an immersive experience through game-play and interaction is key to engaging today's high school students to learn.",
     skills: [
       'Interface Design',
       'User Experience',
@@ -15,7 +15,7 @@ export default [
         type: 'intro',
         columns: {
           left: [
-            "Transforming static text-book content into an immersive experience through game-play and interaction is key to engaging today's high school students to learn."
+            "Transforming static textbook content into an immersive experience through game-play and interaction is key to engaging today's high school students to learn."
           ],
           right: [
             'Mysci is a study application designed to enhance the learning of high school students following the New Zealand year 11 Science curriculum. It differs from other teaching resources through its ability to combine textbook scientific content with interactive gameplay. This builds upon New Zealand teenagers learning abilities and technological competence, providing them an immersive and engaging learning experience.',
@@ -106,43 +106,41 @@ export default [
         type: 'text',
         columns: {
           left: [
-            'Our team began by prioritising features and prioritising these to ensure they were aligned with the personas of Powerco’s customers. Throughout the design and development process we created numerous prototypes to obtain essential feedback. Sudden power outages can cause major distress, so I applied a minimal and clean design aesthetic with efficient navigation making it easy for users to assess quickly what is going on and why.'
+            'Our team began by establishing features and prioritising them, confirming they aligned with and prioritising these to ensure they were aligned with the personas of Powerco’s customers. Throughout the design and development process we created numerous prototypes to obtain essential feedback. Sudden power outages can cause major distress, so I applied a minimal and clean design aesthetic with efficient navigation making it easy for users to assess quickly what is going on and why.'
           ],
           right: [
             'I was the lead designer of this project and worked in a team of talented developers and scrum masters.',
-            'This project is due to launch early 2017'
+            'This project is due to launch early 2017.'
           ],
         },
       },
     ]
   },
   {
-    contentRoot: 'destnz',
-    hoverHeader: 'Destination New Zealand',
-    hoverSubHeader: 'Visiting a foreign country so diverse from your own can often be confusing, so why not let these friendly NZ critters help you out!',
+    contentRoot: 'ed',
+    hoverHeader: 'Ed the Axolotl',
+    hoverSubHeader: 'Keeping track of all your pet’s needs can sometimes be a hassle, which is why I designed an app to help me look after mine!',
     skills: [
       'Interface Design',
       'App Design',
       'Illustration',
-      'Character Design'
     ],
     content: [
       {
         type: 'intro',
         columns: {
           left: [
-            'Visiting a foreign country so diverse from your own can often be confusing, so why not let these friendly NZ critters help you out!'
+            'Keeping track of all your pet’s needs can sometimes be a hassle, which is why I designed an app to help me look after mine!'
           ],
           right: [
-            'Destination New Zealand is an application designed to assist Chinese exchange students visiting or staying in New Zealand. The app is designed to assist them in understanding our culture and daily life practices of New Zealanders.',
-            'This is a personal project I established; designing all interfaces and characters which reflect various species native to New Zealand.'
-          ]
+            'Ed the Axolotl is a personal project of mine established to assist me in caring for my pet axolotl named Ed. I use the app frequently to track how often his tank needs cleaning and to send reminders when he needs food',
+            'Axolotl are small amphibians that are otherwise known as walking fish and are closely related to salamanders. They are critically endangered in the wild due to water pollution and are used extensively in scientific research due to their ability to regenerate limbs.'
+          ],
         },
       },
-      {type: 'image', name: 'DestNZ_1'},
-      {type: 'image', name: 'DestNZ_2'},
-      {type: 'text', content: ''},
-      {type: 'image', name: 'DestNZ_3'},
+      {type: 'image', name: 'Ed_1'},
+      {type: 'image', name: 'Ed_2'},
+      {type: 'images', names: ['Ed_3', 'Ed_6']},
     ],
   },
   {
@@ -161,7 +159,7 @@ export default [
             'The main hurdle in this project came in the form of educating children. Including Laika became a great approach to assist their learning of space expeditions.'
           ],
           right: [
-            'A series of sequential illustrations I created for a children’s educational storybook titled ‘Earth v The Moon’ by Lanky Hippo publishers. The story aims to teach young school children about the Moon by comparing it to Earth. I designed the character Laika the dog to enforce the history of how we managed to reach the moon in the first place.'
+            'I designed a series of sequential illustrations for a children’s educational storybook titled ‘Earth v The Moon’ by Lanky Hippo publishers. The story aims to teach young children about the Moon by comparing it to Earth. I designed the character Laika the dog to introduce the history and encourage the children to question how we managed to reach the moon in the first place.'
           ]
         },
       },
@@ -172,30 +170,70 @@ export default [
       {type: 'image', name: 'Laika5', className: 'Modal--50p-image'},
     ],
   },
-  { contentRoot: 'ed',
-    hoverHeader: 'Ed the Axolotl',
-    hoverSubHeader: 'Keeping track of all your pet’s needs can sometimes be a hassle, which is why I designed an app to help me look after mine!',
+  {
+    contentRoot: 'destnz',
+    hoverHeader: 'Destination New Zealand',
+    hoverSubHeader: 'Visiting a foreign country so diverse from your own can often be confusing, so why not let these friendly kiwi critters help you out!',
     skills: [
       'Interface Design',
       'App Design',
       'Illustration',
+      'Character Design'
     ],
     content: [
       {
         type: 'intro',
         columns: {
           left: [
-            'Keeping track of all your pet’s needs can sometimes be a hassle, which is why I designed an app to help me look after mine!'
+            'Visiting a foreign country so diverse from your own can often be daunting and confusing, so why not let these friendly kiwi critters help you out!'
           ],
           right: [
-            'Ed the Axolotl is a personal project of mine established to assist me in caring for my pet axolotl named Ed. I use the app frequently to track how often his tank needs cleaning and to send reminders when he needs feeding.',
-            'Axolotl are small amphibians that are otherwise known as walking fish and are closely related to salamanders. They are critically endangered in the wild due to water pollution and are used extensively in scientific research due to their ability to regenerate limbs.'
+            'Destination New Zealand is an application designed to assist Chinese exchange students during their stay or visit to New Zealand. The app is designed to assist them in understanding New Zealand culture and daily practices.',
+            'This is a personal project I established; designing all interfaces and characters which reflect various species native to New Zealand.'
+          ]
+        },
+      },
+      {type: 'image', name: 'DestNZ_1'},
+      {type: 'image', name: 'DestNZ_2'},
+      {type: 'text', content: ''},
+      {type: 'image', name: 'DestNZ_3'},
+    ],
+  },
+  {
+    contentRoot: 'gs1',
+    hoverHeader: 'GS1 NZ',
+    hoverSubHeader: 'Working with new technologies is always exciting, but delivering a practical yet fun application that grasped the technologies potential was our biggest challenge.',
+    skills: [
+      'Interaction Design',
+      'Interface Design',
+      'User Experience'
+    ],
+    content: [
+      {
+        type: 'intro',
+        columns: {
+          left: [
+            'Working with new technologies is always exciting, but delivering a practical yet fun application that grasped the technologies potential was our biggest challenge.',
+          ],
+          right: [
+            'GS1 is the only provider of authentic, globally recognised barcodes. They ensure that the barcodes customers receive are unique and can be identified and scanned all over the world. Every year GS1 holds an annual conference bringing trading partners together to network and educate the value of using standard-based business practices and processes. To engage partners and generate a sense of fun and competition within the conference, GS1 NZ sought an application they could distribute that educated users on unauthorised and recalled barcodes through gamification.'
           ],
         },
       },
-      {type: 'image', name: 'Ed_1'},
-      {type: 'image', name: 'Ed_2'},
-      {type: 'images', names: ['Ed_3', 'Ed_6']},
+      {type: 'image', name: 'GS1_1'},
+      {type: 'image', name: 'GS1_2'},
+      {
+        type: 'text',
+        columns: {
+          left: [
+            'We created an application that works by detecting small beacons positioned around the GS1 conference area. When a user is within 5 meters of one of these beacons, they are notified of a GS1 NZ barcode located nearby. The user then has the opportunity to find the barcode, scan it, and receive points based on the type of barcode and item found.'
+          ],
+          right: [
+            'This project is an example of taking innovative technology and delivering a practical yet fun implementation that grasps the technologies potential. I was the lead designer of this project and worked in a team of talented developers and scrum masters.',
+            'This project is due to launch early 2017.',
+          ],
+        },
+      }
     ],
   },
   {
@@ -220,43 +258,6 @@ export default [
       {type: 'image', name: 'PlanningPoker'},
       {type: 'images', names: ['PlanPoker_Space', 'PlanPoker_Water']},
       {type: 'images', names: ['PlanPoker_Dino', 'PlanPoker_Food']},
-    ],
-  },
-  {
-    contentRoot: 'gs1',
-    hoverHeader: 'GS1 NZ',
-    hoverSubHeader: 'Working with new innovative technologies is always exciting, but the challenge came creating a fun experience in a professional environment. No-one wants their phone responding to nearby beacons every 5 seconds…',
-    skills: [
-      'Interaction Design',
-      'Interface Design',
-      'User Experience'
-    ],
-    content: [
-      {
-        type: 'intro',
-        columns: {
-          left: [
-            'Working with new innovative technologies is always exciting, but the challenge came creating a fun experience in a professional environment. No-one wants their phone responding to nearby beacons every 5 seconds…',
-          ],
-          right: [
-            'GS1 is the only provider of authentic, globally recognised barcodes. They ensure that the barcodes customers receive are unique and can be identified and scanned all over the world. Every year GS1 holds an annual conference bringing trading partners together to network and learn about the value of using standard-based business practices and processes. To engage partners and generate a sense of fun and competition within the conference, GS1 NZ sought an application they could distribute that educated users on unauthorised and recalled barcodes through gamification.'
-          ],
-        },
-      },
-      {type: 'image', name: 'GS1_1'},
-      {type: 'image', name: 'GS1_2'},
-      {
-        type: 'text',
-        columns: {
-          left: [
-            'We created an application that works by detecting small beacons positioned around the GS1 conference area. When a user is within 5 meters of one of these beacons, they are notified of a GS1 NZ barcode located nearby. The user then has the opportunity to find the barcode, scan it, and receive points based on the type of barcode and item found.'
-          ],
-          right: [
-            'This project is an example of taking innovative technology and delivering a practical yet fun implementation that grasps the technologies potential. I was the lead designer of this project and worked in a team of talented developers and scrum masters.',
-            'This project is due to launch early 2017',
-          ],
-        },
-      }
     ],
   },
 ];

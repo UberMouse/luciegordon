@@ -1,5 +1,6 @@
 .PortfolioItem--container {
   position: relative;
+  overflow: hidden;
 }
 
 .PortfolioItem {
@@ -40,10 +41,19 @@
   opacity: 0;
   top: 0; left: 0;
   background-color: #484954;
+  transition: opacity 0.15s linear;
 }
 
 .PortfolioItem--container:hover:after {
   opacity: .8;
+}
+
+.PortfolioItem--image {
+  transform: scale3d(1, 1, 1);
+}
+.PortfolioItem--container:hover .PortfolioItem--image {
+  transform: scale3d(1.1, 1.1, 1);
+  transition: all 0.15s linear;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -62,7 +72,7 @@
 
 .information-hover-enter.information-hover-enter-active {
   opacity: 1;
-  transition: opacity 100ms ease-in;
+  transition: all 300ms ease-in;
 }
 
 .information-hover-leave {
@@ -71,5 +81,5 @@
 
 .information-hover-leave.information-hover-leave-active {
   opacity: 0.1;
-  transition: opacity 100ms ease-in;
+  transition: all 300ms ease-in;
 }

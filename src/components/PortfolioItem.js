@@ -26,6 +26,15 @@ export default class PortfolioItem extends Component {
     this.setState({modalOpen: true, hovered: false});
   }
 
+  setHovered = () => {
+    const userAgent = window.navigator.userAgent;
+
+    if (userAgent.match(/iPad/) || userAgent.match(/iPhone/))
+      return null;
+
+    this.setState({hovered: true});
+  }
+
   render() {
     const { hovered, modalOpen } = this.state;
     const { contentRoot, hoverHeader, hoverSubHeader, skills, content } = this.props;
@@ -40,7 +49,7 @@ export default class PortfolioItem extends Component {
     return (
       <Column className="PortfolioItem" medium={6} small={12}>
         <div
-          onMouseEnter={() => this.setState({hovered: true})}
+          onMouseEnter={this.setHovered}
           onMouseLeave={() => this.setState({hovered: false})}
           onClick={this.openModal}
           className="PortfolioItem--container"
@@ -48,8 +57,8 @@ export default class PortfolioItem extends Component {
           <img src={`assets/portfolio/${contentRoot}/thumb.jpg`} className="PortfolioItem--image" />
           <CSSTransitionGroup
             transitionName="information-hover"
-            transitionEnterTimeout={100}
-            transitionLeaveTimeout={100}
+            transitionEnterTimeout={150}
+            transitionLeaveTimeout={150}
           >
             {hovered && hoverInformation}
           </CSSTransitionGroup>

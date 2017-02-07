@@ -2,6 +2,8 @@
   width: 100%;
   position: relative;
   padding: 1rem;
+  padding-left: 0;
+  padding-right: 0;
   font-size: 1.2rem;
   z-index: 9999;
 }
@@ -21,6 +23,7 @@
 .Hamburger--toggle {
   font-size: 1.8rem;
   margin: .4rem;
+  margin-right: -.5rem;
   position: absolute;
   top: 0.5rem;
   right: 2rem;
