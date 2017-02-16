@@ -41,7 +41,7 @@ export default [
   {
     contentRoot: 'anyq',
     hoverHeader: 'AnyQuestions',
-    hoverSubHeader: 'Balancing fun with sophsitication was key to creating a design aesthetic suitable for a broad range of students.',
+    hoverSubHeader: 'A good balance of fun visuals and cultural design elements was key in creating engagement with New Zealand school students.',
     skills: [
       'Interface Design',
       'User Experience',
@@ -54,7 +54,7 @@ export default [
         type: 'intro',
         columns: {
           left: [
-            'Balancing fun with sophsitication was key to creating a design aesthetic suitable for a broad range of students.'
+            'A good balance of fun visuals and cultural design elements was key in creating engagement with New Zealand school students.'
           ],
           right: [
             'AnyQuestions is an online chat platform where questions posed by school students are answered in real time by librarians via text-based chat. The AnyQuestions team wanted to update the underlying technology and refresh the design. I took elements of their existing brand identity to provide a point of continuity but forged a connection with the student demographic by establishing 10 lively characters to carry the users through the site.'
