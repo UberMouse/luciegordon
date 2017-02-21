@@ -3,6 +3,7 @@ import Section from './components/Section';
 import * as Sections from './components/sections';
 import map from 'lodash/map';
 import zip from 'lodash/zip';
+import { Row } from 'react-foundation';
 
 const sectionIntroductions = {
   Portfolio: {
@@ -12,7 +13,26 @@ const sectionIntroductions = {
 };
 
 class App extends Component {
-  render() {
+  constructor() {
+    super();
+
+    this.state = {
+      password: '',
+      authenticated: false,
+    };
+  }
+
+  updatePassword = (e) => {
+    this.setState({password: e.target.value}, this.unlockIfCorrectPassword);
+  }
+
+  unlockIfCorrectPassword = () => {
+    console.log('unlock', this.state);
+    if (this.state.password === "bb-8r2-d2")
+      this.setState({authenticated: true});
+  }
+
+  authenticated = () => {
     var sectionNumber = -1;
     const builtSections = map(Sections, (SectionComponent, name) => {
       const sectionName = name === 'Intro' || name == 'Header' ? null : name;
@@ -30,6 +50,31 @@ class App extends Component {
         {builtSections}
       </div>
     );
+  }
+
+  unauthenticated = () => {
+    return (
+      <Row isColumn className="align-middle" style={{marginTop: '30vh', textAlign: 'center'}}>
+        <Row className="small-12">
+          <h1 style={{marginLeft: 'auto', marginRight: 'auto', paddingBottom: '3rem'}}>
+            Enter the given password <br /> to view this site
+          </h1>
+        </Row>
+        <Row className="small-12">
+          <input type="password" className="password-input" value={this.state.password} onChange={this.updatePassword} placeholder="Password"/>
+
+        </Row>
+      </Row>
+    );
+  }
+
+  render() {
+    const { authenticated } = this.state;
+
+    if (authenticated)
+      return this.authenticated();
+
+    return this.unauthenticated();
   }
 }
 
