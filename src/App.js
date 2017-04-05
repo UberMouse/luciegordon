@@ -27,7 +27,7 @@ class App extends Component {
   }
 
   unlockIfCorrectPassword = () => {
-    if (this.state.password === "lucietaylor")
+    if (this.state.password === "WonderWoman")
       this.setState({authenticated: true});
   }
 
