@@ -1,9 +1,15 @@
+.MySkills {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
 .MySkills--text {
   padding-right: 3rem;
 }
 
 .MySkills--skill {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .MySkills--first-row {
@@ -12,13 +18,36 @@
 
 .MySkills--image {
   margin-bottom: 1rem;
-  width: 8rem;
+  width: 11rem;
 }
 
 .MySkills--caption {
-  margin-bottom: 0rem;
+  margin-bottom: 0;
+  font-weight: 700;
 }
 
 .MySkills--description {
   margin-bottom: 0rem;
+  width: 65%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .MySkills {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 39.9735em) {
+  .MySkills {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .MySkills--skill {
+    margin-bottom: 1.5rem;
+  }
 }

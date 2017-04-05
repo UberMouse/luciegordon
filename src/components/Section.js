@@ -1,19 +1,30 @@
 import React from 'react';
 import './Section.css';
 import { Row, Column } from 'react-foundation';
+import cx from 'classnames';
 
-const Section = ({children, title, anchor}) => {
-  const header = (
-    <h1 className="Section--header text-center bold">
-      {title}<span className="pink">.</span>
-    </h1>
+const Section = ({children, heading, anchor, oddEven}) => {
+  const header = () => (
+    <Row isColumn>
+      <div className="Section--heading text-center">
+        <h1 className="Section--header text-center bold">
+          {heading.header}
+        </h1>
+        <p className="Section--sub-header">{heading.subHeader}</p>
+      </div>
+    </Row>
   );
+  const classes = cx({
+    Section: true,
+    'align-center': true,
+    [`section-background-${oddEven ? 'one' : 'two'}`]: true
+  });
 
   return (
-    <section className="Section align-center">
-      <a id={anchor} style={{marginBottom: '2rem'}}/>
+    <section className={classes}>
+      {anchor && <a id={anchor} className="Section--anchor">[should not be visible]</a>}
 
-      {title && header}
+      {heading && header()}
 
       {children}
     </section>

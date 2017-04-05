@@ -4,14 +4,15 @@ import { Row, Column } from 'react-foundation';
 
 export default () => (
   <div>
-    <Row className="align-middle Contact" isColumn>
-      <h2><span className="Contact--unbold">Email me</span> luciejgordon&#64;gmail&#46;com</h2>
-      <h2><span className="Contact--unbold">Find me at</span> Wellington, New Zealand</h2>
+    <Row className="align-center Contact--header text-center">
+      <Column small={12}>
+        <h1>Get in touch</h1>
+      </Column>
     </Row>
-
-    <Row className="align-center Contact--back-to-top">
-      <Column medium={1} small={3}>
-        <a href="#top"><img src="assets/Arrow.png" /></a>
+    <Row className="align-center Contact text-center">
+      <Column small={12}>
+        <p>Email me <span className="bold">luciejgordon&#64;gmail&#46;com</span></p>
+        <p>Find me at Wellington, New Zealand</p>
       </Column>
     </Row>
   </div>

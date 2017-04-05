@@ -1,9 +1,16 @@
 .Section {
-  margin-bottom: 15rem;
+}
+
+.Section--anchor {
+  opacity: 0;
+}
+
+.Section:first-of-type {
+  margin-bottom: 0rem;
 }
 
 .Section:last-of-type {
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 
 .Section--arrow {
@@ -14,17 +21,20 @@
   width: 2rem;
 }
 
-.Section--header {
-  margin-top: 2rem;
-  margin-bottom: 6rem;
+.Section--heading {
+  max-width: 25rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 39.9375em) {
   .Section {
-    margin-bottom: 5rem;
+    margin-bottom: 0rem;
   }
 
-  .Section--header {
-    margin-bottom: 3rem;
+  .Section--heading {
+    margin-top: 3rem;
   }
 }

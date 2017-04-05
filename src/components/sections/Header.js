@@ -1,7 +1,7 @@
 import './Header.css';
 import { Row, Column } from 'react-foundation';
 import React from 'react';
-import Hamburger from './Hamburger';
+import Hamburger from '../Hamburger';
 import map from 'lodash/map';
 
 const menuItems = map(
@@ -16,11 +16,11 @@ export default () => {
     <div>
       <a id="top"></a>
 
-      <Row className="Header semi-bold show-for-large">
-        <Column medium={6}>
+      <Row className="Header semi-bold show-for-large align-middle">
+        <Column medium={6} className="Header--title">
           <span className="pink">Lucie Gordon</span>
         </Column>
-        <Column medium={6} className="text-right">
+        <Column medium={6} className="text-right Header--nav-items">
           {menuItems}
         </Column>
       </Row>

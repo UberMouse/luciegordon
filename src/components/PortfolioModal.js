@@ -18,22 +18,18 @@ export default ({open, header, children, skills, closeCb}) => (
     className="Modal--content"
   >
     <div className="Modal--header">
-      <span
-        className="Modal--close bold"
+      <i
+        className="Modal--close fa fa-times"
         onClick={closeCb}
-      >x</span>
+      ></i>
     </div>
 
     <Row>
       <Column className="align-center">
-        <h1 className="Modal--title bold text-center">
-          {header}<span className="pink">.</span>
+        <h1 className="Modal--title bold pink">
+          {header}
         </h1>
       </Column>
-    </Row>
-
-    <Row isColumn className="align-center">
-      <p className="Modal--skills">{skills.join(', ')}</p>
     </Row>
 
     {children}

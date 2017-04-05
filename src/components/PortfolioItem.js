@@ -21,26 +21,35 @@ export default class PortfolioItem extends Component {
   }
 
   openModal = () => {
-    ga('send', 'event', 'Modal', 'Open', this.props.hoverText);
+    ga('send', 'event', 'Modal', 'Open', this.props.hoverHeader);
 
-    this.setState({modalOpen: true});
+    this.setState({modalOpen: true, hovered: false});
+  }
+
+  setHovered = () => {
+    const userAgent = window.navigator.userAgent;
+
+    if (userAgent.match(/iPad/) || userAgent.match(/iPhone/))
+      return null;
+
+    this.setState({hovered: true});
   }
 
   render() {
     const { hovered, modalOpen } = this.state;
-    const { contentRoot, hoverText, skills, content } = this.props;
+    const { contentRoot, hoverHeader, hoverSubHeader, skills, content } = this.props;
 
     const hoverInformation = (
-      <div className="PortfolioItem--hover-info">
-        <span>{hoverText} </span>
-        <span><i className="fa fa-arrow-right"></i></span>
+      <div className="PortfolioItem--hover">
+        <h3>{hoverHeader}</h3>
+        <p>{hoverSubHeader}</p>
       </div>
     );
 
     return (
-      <Column className="PortfolioItem" medium={4} small={12}>
+      <Column className="PortfolioItem" medium={6} small={12}>
         <div
-          onMouseEnter={() => this.setState({hovered: true})}
+          onMouseEnter={this.setHovered}
           onMouseLeave={() => this.setState({hovered: false})}
           onClick={this.openModal}
           className="PortfolioItem--container"
@@ -48,8 +57,8 @@ export default class PortfolioItem extends Component {
           <img src={`assets/portfolio/${contentRoot}/thumb.jpg`} className="PortfolioItem--image" />
           <CSSTransitionGroup
             transitionName="information-hover"
-            transitionEnterTimeout={100}
-            transitionLeaveTimeout={100}
+            transitionEnterTimeout={150}
+            transitionLeaveTimeout={150}
           >
             {hovered && hoverInformation}
           </CSSTransitionGroup>
@@ -57,7 +66,7 @@ export default class PortfolioItem extends Component {
 
         <PortfolioModal
           open={modalOpen}
-          header={hoverText}
+          header={hoverHeader}
           skills={skills}
           closeCb={this.closeModal}
         >

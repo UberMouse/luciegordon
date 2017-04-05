@@ -26,17 +26,37 @@
   font-style: normal;
 }
 
-h1, h2, h3, p, span, a {
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Regular.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+p, span, a {
   font-family: ProximaNova, Helvetica, sans-serif;
-  color: #2F434F;
+  color: #484954;
+}
+
+h1, h2, h3 {
+  font-family: Montserrat, Helvetica, sans-serif;
+  color: #484954;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 h2 {
   font-weight: bold;
-}
-
-body {
-  padding-top: 2rem;
 }
 
 .semi-bold {
@@ -48,18 +68,18 @@ body {
 }
 
 .pink {
-  color: #F28B8B;
+  color: #F76B7E;
 }
 
 h1 {
-  font-size: 5rem;
-  line-height: 1.2;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 300;
-  line-height: 2.4rem;
+  line-height: 2.5rem;
 }
 
 .back-to-home {
@@ -68,9 +88,16 @@ p {
   float: right;
 }
 
+.row {
+  max-width: 75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.3rem;
+    line-height: 3.5rem;
   }
 
   h2 {
@@ -81,21 +108,53 @@ p {
     font-size: 1rem;
     line-height: 2rem !important;
   }
-
-  .row {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
 }
 
 @media screen and (max-width: 39.9375em) {
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
     padding: .5rem;
   }
 
   p {
     font-size: 1rem;
     line-height: 2rem !important;
+  }
+
+  .row {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+}
+
+.section-background-one {
+  background-color: #FEFEFE;
+}
+
+.section-background-two {
+  background-color: #F9F8F6;
+}
+
+.password-input {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .password-input {
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .password-input {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

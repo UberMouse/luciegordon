@@ -44,7 +44,7 @@ export default class Hamburger extends Component {
 
     return (
       <div className={containerClasses}>
-        <span className="pink">Lucie Gordon</span>
+        <span className="pink Hamburger--title">Lucie Gordon</span>
         <i
           className={iconClasses}
           aria-hidden="true"
